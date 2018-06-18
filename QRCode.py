@@ -8,5 +8,7 @@ qr.make(fit=True)
 img=qr.make_image()
 img.save('SAVE LOCATION')
 #Decoding a QRCode
+#Saved Location is the name of file with extension of the qr code
 decoded=decode(Image.open('SAVED LOCATION'))
+#This print statement will print the data you have added
 print(str(decoded[0].data)[2:-1])
